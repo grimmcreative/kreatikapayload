@@ -1,4 +1,4 @@
-import React from 'react'
+import Image from "next/image"
 
 interface Props {
   className?: string
@@ -14,15 +14,18 @@ export const Logo = (props: Props) => {
 
   return (
     /* eslint-disable @next/next/no-img-element */
-    <img
-      alt="Payload Logo"
-      width={193}
-      height={43}
-      loading={loading}
-      fetchPriority={priority}
-      decoding="async"
-      className="max-w-[9.375rem] invert dark:invert-0 w-full"
-      src="https://raw.githubusercontent.com/payloadcms/payload/main/packages/ui/src/assets/payload-logo-light.svg"
-    />
+    <>
+      <Image 
+        src="/ui/logo-light.svg" 
+        alt="KREATIKA" 
+        width={200} 
+        height={50}
+        className="max-w-[9.375rem] invert dark:invert-0 w-full"
+        decoding="async"
+        loading={loading}
+        fetchPriority={priority} 
+      />
+    </>
+
   )
 }
