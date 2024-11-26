@@ -85,7 +85,7 @@ export interface Page {
   id: number;
   title: string;
   hero: {
-    type: 'none' | 'highImpact' | 'mediumImpact' | 'lowImpact';
+    type: 'none' | 'highImpact' | 'highImpactVideo' | 'mediumImpact' | 'lowImpact';
     richText?: {
       root: {
         type: string;

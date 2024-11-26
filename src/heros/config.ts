@@ -28,6 +28,10 @@ export const hero: Field = {
           value: 'highImpact',
         },
         {
+          label: 'High Impact Video',
+          value: 'highImpactVideo',
+        },
+        {
           label: 'Medium Impact',
           value: 'mediumImpact',
         },
@@ -62,7 +66,7 @@ export const hero: Field = {
       name: 'media',
       type: 'upload',
       admin: {
-        condition: (_, { type } = {}) => ['highImpact', 'mediumImpact'].includes(type),
+        condition: (_, { type } = {}) => ['highImpact', 'mediumImpact', 'highImpactVideo'].includes(type),
       },
       relationTo: 'media',
       required: true,
